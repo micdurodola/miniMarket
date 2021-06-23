@@ -21,8 +21,8 @@ connection.once('open',()=>{
 // Backend routes
 const marketRouter = require('./route/markets');
 const userRouter = require('./route/users');
-app.use('/market', marketRouter);
-app.use('/user', userRouter);
+app.use('/api/v1/market', marketRouter);
+app.use('api/v1/user', userRouter);
 
 
 //Create Server
