@@ -11,7 +11,7 @@ const URI = process.env.DATABASE_URI;
 
 
 // Connect to MongoDB Database
-mongoose.connect(URI, {useNewUrlParser: true, useUnifiedTopology: true});
+mongoose.connect(URI, {useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex:true});
 const connection = mongoose.connection;
 
 connection.once('open',()=>{
@@ -20,7 +20,7 @@ connection.once('open',()=>{
 
 // Backend routes
 const marketRouter = require('./route/markets');
-const userRouter = require('./router/users');
+const userRouter = require('./route/users');
 app.use('/market', marketRouter);
 app.use('/user', userRouter);
 

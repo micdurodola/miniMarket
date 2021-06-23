@@ -5,8 +5,8 @@ const userSchema = new Schema({
     first_name:{type:String,required:true},
     last_name:{type:String, required:true},
     email:{type:String, required:true,unique:true},
-    password:{type:String.apply, required:true}},
-    password2:{type:String.apply, required:true}},
+    password:{type:String, required:true, minlength:7},
+    password2:{type:String, required:true,  minlength:7}},
     {timestamps:true}         
 );
 
