@@ -16,7 +16,13 @@ const connection = mongoose.connection;
 
 connection.once('open',()=>{
     console.log('Database connection was succesful');
-})     
+})   
+
+// Backend routes
+const marketRouter = require('./route/markets');
+const userRouter = require('./router/users');
+app.use('/market', marketRouter);
+app.use('/user', userRouter);
 
 
 //Create Server
