@@ -5,6 +5,7 @@ import Footer from "./Screens/footer";
 import MarketList from "./Screens/HomeScreen";
 import Register from "./Screens/registerScreen";
 import Login from "./Screens/loginScreen";
+import Dashboard from "./Screens/dashboardScreen";
 
 function App() {
   return (
@@ -13,7 +14,8 @@ function App() {
         <Header/> 
         <Route path="/" exact component={MarketList} />  
         <Route path="/register" exact component={Register} />    
-        <Route path="/login" exact component={Login} />            
+        <Route path="/login" exact component={Login} />   
+        <Route path="/dashboard" exact component={Dashboard} />           
         <Footer/>
 
     </Router>

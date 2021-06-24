@@ -7,14 +7,12 @@ const Login = () =>{
     return(
         <div>
             <div className="wrapper fadeInDown">
-            <div id="formContent">
-            
+            <div id="formContent">            
                 <div className="fadeIn first">
                 
                 </div>
-
             
-                <form>
+                <form className="login-form">
                 <input type="text" id="login" className="fadeIn second" name="email" placeholder="email" />
                 <input type="text" id="password" className="fadeIn third" name="pasword" placeholder="password" />
                 <input type="submit" className="fadeIn fourth" value="Log In" />

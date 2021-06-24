@@ -13,7 +13,7 @@ const Register = () =>{
                 </div>
 
             
-                <form>
+                <form clasName="login-form">
                 <input type="text" id="login" className="fadeIn second" name="first_name" placeholder="First Name" />                
                 <input type="text" id="login" className="fadeIn second" name="last_name" placeholder="Last Name" />  
                 <input type="text" id="login" className="fadeIn second" name="email" placeholder="email" />

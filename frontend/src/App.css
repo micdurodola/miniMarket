@@ -36,11 +36,12 @@ header{
 /******* Search Section ******/
 
 .main-image{
-  background-image: url(./background.jpg); 
+  background-image: url(./background.jpg);   
   min-height:300px;
   background-position:center;
   background-size: cover;
   margin-top:-30px;
+  margin-bottom:20px;
 
 }
 
@@ -52,11 +53,12 @@ header{
   color:#000;
   font-size: 40px;
 }
-form{
+.login-form{
   background-color:rgba(255, 255, 255, 0.589);
   padding: 10px 20px;
 
 }
+
 
 input[type=search]{
   width:75%;   
@@ -94,99 +96,48 @@ input[type=search]:focus{
 
 
 
-.select-price-picker{
-  width:50%;
-  text-align: right;  
-  padding-top:25px;  
-  float:right;
-  
+/******* Display Card ******/
+.card {
+  font-size: 1em;
+  overflow: hidden;
+  padding: 0;
+  border: none;
+  border-radius: .28571429rem;
+  box-shadow: 0 1px 3px 0 #d4d4d5, 0 0 0 1px #d4d4d5;
+}
+.card-block {
+  font-size: 1em;
+  position: relative;
+  margin: 0;
+  padding: 1em;
+  border: none;
+  border-top: 1px solid rgba(34, 36, 38, .1);
+  box-shadow: none;
 }
 
-.select-price-picker select{
-  width:70%;
-  background:#dddada;
-  padding:5px 10px;
-  color:#000 !important;
-  font-size:14px;
-  border: 0px solid #dddada;
-  border-radius:5px;
-  outline:none;
+.card-img-top {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
-select:focus{
-  outline:none;
+.card-title {
+  font-size: 1.28571429em;
+  font-weight: 700;
+  line-height: 1.2857em;
 }
 
-/******* Display Table ******/
-.select-box-picker{
-  width:30%;
-  margin-bottom:50px;
-}
-.select-box-picker select{
-  width:100%;
-  background:#dddada;
-  padding:10px 25px;
-  color:#000 !important;
-  font-size:14px;
-  border: 0px solid #dddada;
-  border-radius:5px;
+.card-text {
+  clear: both;
+  margin-top: .5em;
+  color: rgba(0, 0, 0, .68);
 }
 
-
-
-
-.main-table{
-  background:#f4f4f4;
-}
-table, th, td {
-  border-top: 8px solid #fff !important;
-  font-size:12px;
-  font-weight:500;
+.card-inverse .btn {
+  border: 1px solid rgba(0, 0, 0, .05);
 }
 
-.btn-rent{
-  background-color:#56cc75;
-  padding:3px 15px;
-  color:#fff;
-  
-}
-
-.table_button{
-text-align: right;
-}
-
-.dropdown-button{
-  width:50%;
-  float:left;
-}
-
-.sort{
-  background-color:#f4f4f4;
-  margin-bottom:30px;
-  align-items:center;
-}
-
-.sort p{
-  color:rgba(0, 0, 0, 0.424);
-  padding-top:25px;
-  font-size:14px;
-  font-weight:bold;
-}
-
-.review img{
-  width:100%;
-  text-align: center;
-}
-
-.checked {
-  color: orange;
-}
-
-.address{
-  color:rgba(95, 95, 255, 0.733);
-  font-size:12px;
-  padding-top:5px;
-}
+/*** FOOTER ***/
 
 footer{
   align-items: center;
@@ -194,15 +145,11 @@ footer{
   background-color:#000;
   text-align: center;
   padding:10px 10px;
+  margin-top: 20px;
 }
 
 
 /*** LOGIN AND REGISTRATION FORM ***/
-
-
-
-
-/* STRUCTURE */
 
 .wrapper {
   display: flex;
@@ -258,8 +205,7 @@ input[type=button], input[type=submit], input[type=reset]  {
   background-color: #56baed;
   border: none;
   color: white;
-  padding: 15px 80px;
-  text-align: center;
+  padding: 15px 80px;  
   text-decoration: none;
   display: inline-block;
   text-transform: uppercase;
@@ -316,6 +262,7 @@ input[type=text]:focus {
 
 input[type=text]:placeholder {
   color: #cccccc;
+  text-align:left;
 }
 
 
@@ -432,6 +379,39 @@ input[type=text]:placeholder {
 
 #icon {
   width:60%;
+}
+
+
+/*** DASHBOARD ***/
+
+.product-button{
+  float:right;
+  margin-bottom: 50px;
+}
+
+.edit{
+  margin-right:5px;
+}
+
+.form-control{
+  width:85%;
+  background:#f6f6f6;
+  padding:15px 32px;
+  margin:5px;
+ 
+}
+
+.submit-control{
+  width:85%;
+  background:#f6f6f6;
+  padding:15px 32px;
+  margin:5px;
+  background-color:#56baed;
+
+}
+
+.file-input{
+  padding-bottom:30px;
 }
 
 		

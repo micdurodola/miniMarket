@@ -14,47 +14,67 @@ const MarketList = (props) => {
                 <div className="col-md-8 search">
                 <h3>Find Market</h3>
                 <form action="">
-                    <input type="search" name="" id="" placeholder="Enter city or state.."  />
+                    <input type="search" name="" id="" placeholder="Enter Market Name.."  />
                 <button type="submit"className="search-btn">Find Market<br/><p className="btn-text">One Naira For First Rent</p></button>   
                 </form>
                 </div>
             </div>
 
             </div>
-        </section>        
-
-
-        <section>
-            <div className="container">
+        </section>   
+        <div className="container">
+        <hr/>
             <div className="row">
-               
-                <div className="col-md-10">
-                    <div className="row">
-                    
-                    
-                    </div>
-                    <div className="table-responsive">
-                        <table className="table  main-table" id="myTable">
-                           
-                        <tbody>
-                            <tr>
-                            <th scope="row"></th>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td className="table_button"><Link to="/rent" className="btn-rent">Rent Now</Link></td>
-                            </tr>
-                        
-                      
-                        </tbody>
-                     
-                        </table>
-                    </div>
-
+                <div className="col-md-2">
+                    <p>General Market</p>
                 </div>
+                <div className="col-md-2">
+                    <p>Fruit Market</p>
+                </div>
+                <div className="col-md-2">
+                    <p>Dairy Market</p>
+                </div>
+                <div className="col-md-2">
+                    <p>Dairy Market</p>
+                </div>
+
+            </div>
+            <hr/>
+        </div>     
+
+
+        <div className="container">
+            <div className="row">               
+            <div className="col-sm-6 col-md-4 col-lg-3 mt-4">
+                <div className="card">
+                    <img className="card-img-top" src="https://picsum.photos/200/150/?random" />
+                    <div className="card-block">
+                        <h5 className="text-bold">Tawshif Ahsan Khan</h5>
+                    </div>
+                </div>
+               
+            </div>
+            <div className="col-sm-6 col-md-4 col-lg-3 mt-4">
+                <div className="card">
+                    <img className="card-img-top" src="https://picsum.photos/200/150/?random" />
+                    <div className="card-block">
+                        <h5 className="text-bold">Tawshif Ahsan Khan</h5>
+                    </div>
+                </div>
+               
+            </div>
+            <div className="col-sm-6 col-md-4 col-lg-3 mt-4">
+                <div className="card">
+                    <img className="card-img-top" src="https://picsum.photos/200/150/?random" />
+                    <div className="card-block">
+                        <h5 className="text-bold">Tawshif Ahsan Khan</h5>
+                    </div>
+                </div>
+               
+            </div>
             </div>
         </div>
-        </section>
+       
 
     </div>
 
